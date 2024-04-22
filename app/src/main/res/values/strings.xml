@@ -1,0 +1,9 @@
+<resources>
+
+
+    <string name="app_name">Image Compressor and Image To PDF Converter</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="privacy_link">https://www.google.com/</string>
+
+</resources>

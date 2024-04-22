@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <LinearLayout android:background="@drawable/start_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.67">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginBottom="12dp" android:src="@drawable/thankyou" android:layout_above="@+id/card_thank" android:layout_centerHorizontal="true"/>
+            <androidx.cardview.widget.CardView android:id="@+id/card_thank" android:layout_width="match_parent" android:layout_height="115dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="8dp" app:cardElevation="6dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.6">
+                        <TextView android:textSize="18sp" android:textColor="#121842" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share Your Valuable Experience." android:fontFamily="@font/roboto_bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.4">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_thankyou" android:background="@drawable/bg_start" android:layout_width="160dp" android:layout_height="42dp">
+                            <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thank You" android:fontFamily="@font/roboto_bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarStyle" android:gravity="center" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.33">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:weightSum="1">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_share" android:background="@drawable/bg_start_share" android:layout_width="130dp" android:layout_height="38dp" android:layout_marginLeft="16dp">
+                        <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share App" android:fontFamily="@font/roboto_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_rate" android:background="@drawable/bg_start_share" android:layout_width="130dp" android:layout_height="38dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rate App" android:fontFamily="@font/roboto_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="3dp">
+                <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="More Apps By Developer" android:fontFamily="@font/armwrestler"/>
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="---------------------------------------------------"/>
+            </LinearLayout>
+            <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/TrendingAllApps_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/native_add" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/img_square" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/banner" android:adjustViewBounds="true"/>
+                <FrameLayout android:orientation="vertical" android:id="@+id/MainContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:background="#efecec" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

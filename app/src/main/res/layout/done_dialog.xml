@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="350dp" android:layout_height="280dp" android:layout_margin="24dp" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#398dff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/done"/>
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Done!" android:fontFamily="@font/bengo"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+                <TextView android:textSize="16sp" android:textColor="#403e3e" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Image is Successfully Converted. You will find it in MY CREATION." android:fontFamily="@font/bengo"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_ok" android:background="@drawable/submit_bg_new" android:layout_width="125dp" android:layout_height="38dp" android:layout_marginTop="18dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok" android:textAllCaps="true" android:fontFamily="@font/armwrestler"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

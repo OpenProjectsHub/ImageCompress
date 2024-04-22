@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="350dp" android:layout_height="620dp" android:layout_margin="24dp" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:layout_weight="0.6">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#398dff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.6">
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/jpg" app:tint="#fcbc17"/>
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Select JPG Quality to Convert" android:fontFamily="@font/bengo"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.4">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_ok" android:background="@drawable/submit_bg_new" android:layout_width="125dp" android:layout_height="38dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok" android:textAllCaps="true" android:fontFamily="@font/armwrestler"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_centerHorizontal="true">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_low" android:background="@drawable/border_green_bg" android:layout_width="100dp" android:layout_height="38dp">
+                            <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Low" android:textAllCaps="true" android:fontFamily="@font/armwrestler"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_normal" android:background="@drawable/border_green_bg" android:layout_width="100dp" android:layout_height="38dp" android:layout_marginLeft="8dp">
+                            <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Normal" android:textAllCaps="true" android:fontFamily="@font/armwrestler"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/lin_high" android:background="@drawable/border_green_bg" android:layout_width="100dp" android:layout_height="38dp" android:layout_marginLeft="8dp">
+                            <TextView android:textSize="16sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High" android:textAllCaps="true" android:fontFamily="@font/armwrestler"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.42">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@+id/native_add" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <FrameLayout android:orientation="vertical" android:id="@+id/MainContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <ImageView android:layout_gravity="center" android:id="@+id/img_square" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/banner" android:adjustViewBounds="true"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

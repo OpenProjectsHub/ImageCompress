@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/light_blue_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="70dp" android:layout_margin="4dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.75">
+        <ImageView android:id="@+id/file_icon" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="12dp" android:src="@drawable/img_pdf_ic" android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.25">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20sp" android:textColor="#525172" android:ellipsize="end" android:id="@+id/txt_pdf_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:text="Image to Pdf" android:maxLines="1" android:layout_alignParentTop="true" android:textAllCaps="true" android:fontFamily="@font/bebasneue_bold"/>
+            <ImageView android:id="@+id/img_share" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:src="@drawable/share" android:layout_toLeftOf="@+id/img_delete" android:layout_alignParentBottom="true" app:tint="#5357fe"/>
+            <ImageView android:id="@+id/img_delete" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:src="@drawable/delete" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:tint="#5357fe"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

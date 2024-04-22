@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/light_blue_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="110dp" android:layout_margin="6dp">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.75">
+        <ImageView android:id="@+id/file_icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="14dp" android:src="@drawable/img_pdf_ic" app:tint="#5357fe"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.25">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="20sp" android:textColor="#525172" android:ellipsize="end" android:id="@+id/txt_pdf_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:text="Image to Pdf" android:maxLines="1" android:layout_alignParentTop="true" android:textAllCaps="true" android:fontFamily="@font/bebasneue_bold"/>
+            <TextView android:textSize="13sp" android:textColor="#7e7cac" android:ellipsize="end" android:id="@+id/created_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:text="Convert Image/Images as a PDF File Easily" android:maxLines="1" android:layout_below="@+id/txt_pdf_name" android:fontFamily="@font/bengo"/>
+            <TextView android:textSize="13sp" android:textColor="#7e7cac" android:ellipsize="end" android:id="@+id/size_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:text="Convert Image/Images as a PDF File Easily" android:maxLines="1" android:layout_below="@+id/created_date" android:fontFamily="@font/bengo"/>
+            <ImageView android:id="@+id/img_share" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:src="@drawable/share" android:layout_toLeftOf="@+id/img_delete" android:layout_alignParentBottom="true" app:tint="#5357fe"/>
+            <ImageView android:id="@+id/img_delete" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:src="@drawable/delete" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:tint="#5357fe"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
